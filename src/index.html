@@ -12,170 +12,186 @@
   <link rel="stylesheet" href="scss/main.scss">
 </head>
 
-<body class="">
-  <header>
-    <img src="./assets/coder-dark.svg" alt="Coderhouse logo">
+<body class="base-layout">
 
-    <select name="" id="">
-      <option>Light</option>
-      <option>Dark</option>
-      <option>Coder</option>
-    </select>
+  <header class="base-header">
+    <nav class="navbar container">
+      <img class="navbar-brand" src="./assets/coder-dark.svg" alt="Coderhouse logo">
+
+      <div class="navbar-items">
+        <select>
+          <option>Light</option>
+          <option>Dark</option>
+          <option>Coder</option>
+        </select>
+      </div>
+    </nav>
   </header>
 
-  <main>
-    <h1>Creación de framework propio con SASS</h1>
+  <main class="base-content">
 
-    <section>
-      <h2>Preview</h2>
-      <p>Sed ultricies dolor non ante vulputate hendrerit. Vivamus sit amet suscipit sapien. Nulla iaculis eros a elit pharetra egestas.</p>
-
-      <form>
-        <input type="text" name="name" placeholder="Nombre" required>
-        <input type="email" name="email" placeholder="Correo electrónico" required>
-
-        <label for="terms">
-          <input type="checkbox" role="switch" id="terms" name="terms" required>
-          Acepto los <a href="#">Terminos y condiciones</a>
-        </label>
-
-        <button type="submit">Subscribirse</button>
-      </form>
-    </section>
-
-
-    <section>
-      <h2>Tipografía</h2>
-      <p>Aliquam lobortis vitae nibh nec rhoncus. Morbi mattis neque eget efficitur feugiat. Vivamus porta nunc a erat mattis, mattis feugiat turpis pretium. Quisque sed tristique felis.</p>
-
-      <h3>Lists</h3>
-      <ul>
-        <li>Aliquam lobortis lacus eu libero ornare facilisis.</li>
-        <li>Nam et magna at libero scelerisque egestas.</li>
-        <li>Suspendisse id nisl ut leo finibus vehicula quis eu ex.</li>
-        <li>Proin ultricies turpis et volutpat vehicula.</li>
-      </ul>
-
-      <h3>Elementos en linea </h3>
-      <div>
-        <a href="#">Link primario</a>
-        <a href="#">Link secundario</a>
-      </div>
-
-      <h3>Heading 3</h3>
-      <p>Integer bibendum malesuada libero vel eleifend. Fusce iaculis turpis ipsum, at efficitur sem scelerisque vel. Aliquam auctor diam ut purus cursus fringilla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-
-      <h4>Heading 4</h4>
-      <p>Cras fermentum velit vitae auctor aliquet. Nunc non congue urna, at blandit nibh. Donec ac fermentum felis. Vivamus tincidunt arcu ut lacus hendrerit, eget mattis dui finibus.</p>
-
-      <h5>Heading 5</h5>
-      <p>Donec nec egestas nulla. Sed varius placerat felis eu suscipit. Mauris maximus ante in luctus. Morbi euismod sagittis efficitur. Aenean non eros orci. Vivamus ut diam sem.</p>
-
-      <h6>Heading 6</h6>
-      <p>Ut sed quam non mauris placerat consequat vitae id risus. Vestibulum tincidunt nulla ut tortor posuere, vitae malesuada tortor molestie. Sed nec interdum dolor. Vestibulum id auctor nisi, a efficitur sem. Aliquam sollicitudin efficitur turpis, sollicitudin hendrerit ligula semper id. Nunc risus felis, egestas eu tristique eget, convallis in velit.</p>
-
-      <p>
-        <img src="https://picsum.photos/1280/720">
-      </p>
-    </section>
-
-    <section>
-      <h2>Buttons</h2>
-
-      <div>
-        <button>Boton relleno</button>
-        <button>Boton con borde</button>
-        <button>Boton con plano</button>
-      </div>
-
-      <h3>Colores</h3>
-      <div>
-        <button>Boton primario</button>
-        <button>Boton secundario</button>
-      </div>
-
-      <h3>Tamaños</h3>
-      <div>
-        <button>Boton pequeño</button>
-        <button>Boton mediano</button>
-        <button>Boton grande</button>
+    <section class="hero-section">
+      <div class="container">
+        <h1 class="hero-title">Creación de framework propio con SASS</h1>
       </div>
     </section>
 
-    <section>
-      <h2>Cards</h2>
 
-      <div>
-        <img src="https://picsum.photos/400/600">
-        <div>
-          <h5>Card example</h5>
+    <div class="container">
+      <section class="base-section">
+        <h2>Preview</h2>
+        <p>Sed ultricies dolor non ante vulputate hendrerit. Vivamus sit amet suscipit sapien. Nulla iaculis eros a elit pharetra egestas.</p>
 
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur tempora ipsa dignissimos cupiditate numquam culpa corrupti alias vitae sit voluptas ut maiores autem repellendus maxime eaque, modi fugit velit similique.</p>
+        <form>
+          <input type="text" name="name" placeholder="Nombre" required>
+          <input type="email" name="email" placeholder="Correo electrónico" required>
 
-          <a href="#">Action</a>
-        </div>
-      </div>
-
-      <div>
-        <div>
-          <h5>Card example 2</h5>
-
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur tempora ipsa dignissimos cupiditate numquam culpa corrupti alias vitae sit voluptas ut maiores autem repellendus maxime eaque, modi fugit velit similique.</p>
-
-          <a href="#">Action 2</a>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <h2>Formularios</h2>
-
-      <form>
-        <div>
-          <label for="text">Text</label>
-          <input type="text" id="text" name="text" placeholder="Text">
-          <small>Curabitur consequat lacus at lacus porta finibus.</small>
-        </div>
-
-        <div>
-          <label for="valid">
-            Valido
-            <input type="text" id="valid" name="valid" placeholder="Valido">
+          <label for="terms">
+            <input type="checkbox" role="switch" id="terms" name="terms" required>
+            Acepto los <a href="#">Terminos y condiciones</a>
           </label>
 
-          <label for="invalid">
-            Invalido
-            <input type="text" id="invalid" name="invalid" placeholder="Invalido">
-          </label>
+          <button type="submit">Subscribirse</button>
+        </form>
+      </section>
 
-          <label for="disabled">
-            Deshabilitado
-            <input type="text" id="disabled" name="disabled" placeholder="Deshabilitado" disabled>
-          </label>
-        </div>
-      </form>
-    </section>
+      <section class="base-section">
+        <h2>Tipografía</h2>
+        <p>Aliquam lobortis vitae nibh nec rhoncus. Morbi mattis neque eget efficitur feugiat. Vivamus porta nunc a erat mattis, mattis feugiat turpis pretium. Quisque sed tristique felis.</p>
 
-    <section>
-      <h2>Acordiones</h2>
-
-      <details>
-        <summary>Accordion 1</summary>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque urna diam, tincidunt nec porta sed, auctor id velit. Etiam venenatis nisl ut orci consequat, vitae tempus quam commodo. Nulla non mauris ipsum. Aliquam eu posuere orci. Nulla convallis lectus rutrum quam hendrerit, in facilisis elit sollicitudin. Mauris pulvinar pulvinar mi, dictum tristique elit auctor quis. Maecenas ac ipsum ultrices, porta turpis sit amet, congue turpis.</p>
-      </details>
-      <details>
-        <summary>Accordion 2</summary>
+        <h3>Lists</h3>
         <ul>
-          <li>Vestibulum id elit quis massa interdum sodales.</li>
-          <li>Nunc quis eros vel odio pretium tincidunt nec quis neque.</li>
-          <li>Quisque sed eros non eros ornare elementum.</li>
-          <li>Cras sed libero aliquet, porta dolor quis, dapibus ipsum.</li>
+          <li>Aliquam lobortis lacus eu libero ornare facilisis.</li>
+          <li>Nam et magna at libero scelerisque egestas.</li>
+          <li>Suspendisse id nisl ut leo finibus vehicula quis eu ex.</li>
+          <li>Proin ultricies turpis et volutpat vehicula.</li>
         </ul>
-      </details>
-    </section>
+
+        <h3>Elementos en linea </h3>
+        <div>
+          <a href="#">Link primario</a>
+          <a href="#">Link secundario</a>
+        </div>
+
+        <h3>Heading 3</h3>
+        <p>Integer bibendum malesuada libero vel eleifend. Fusce iaculis turpis ipsum, at efficitur sem scelerisque vel. Aliquam auctor diam ut purus cursus fringilla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+
+        <h4>Heading 4</h4>
+        <p>Cras fermentum velit vitae auctor aliquet. Nunc non congue urna, at blandit nibh. Donec ac fermentum felis. Vivamus tincidunt arcu ut lacus hendrerit, eget mattis dui finibus.</p>
+
+        <h5>Heading 5</h5>
+        <p>Donec nec egestas nulla. Sed varius placerat felis eu suscipit. Mauris maximus ante in luctus. Morbi euismod sagittis efficitur. Aenean non eros orci. Vivamus ut diam sem.</p>
+
+        <h6>Heading 6</h6>
+        <p>Ut sed quam non mauris placerat consequat vitae id risus. Vestibulum tincidunt nulla ut tortor posuere, vitae malesuada tortor molestie. Sed nec interdum dolor. Vestibulum id auctor nisi, a efficitur sem. Aliquam sollicitudin efficitur turpis, sollicitudin hendrerit ligula semper id. Nunc risus felis, egestas eu tristique eget, convallis in velit.</p>
+
+        <p>
+          <img src="https://picsum.photos/1280/720">
+        </p>
+      </section>
+
+      <section class="base-section">
+        <h2>Buttons</h2>
+
+        <div>
+          <button>Boton relleno</button>
+          <button>Boton con borde</button>
+          <button>Boton con plano</button>
+        </div>
+
+        <h3>Colores</h3>
+        <div>
+          <button>Boton primario</button>
+          <button>Boton secundario</button>
+        </div>
+
+        <h3>Tamaños</h3>
+        <div>
+          <button>Boton pequeño</button>
+          <button>Boton mediano</button>
+          <button>Boton grande</button>
+        </div>
+      </section>
+
+      <section class="base-section">
+        <h2>Cards</h2>
+
+        <div>
+          <img src="https://picsum.photos/400/600">
+          <div>
+            <h5>Card example</h5>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur tempora ipsa dignissimos cupiditate numquam culpa corrupti alias vitae sit voluptas ut maiores autem repellendus maxime eaque, modi fugit velit similique.</p>
+
+            <a href="#">Action</a>
+          </div>
+        </div>
+
+        <div>
+          <div>
+            <h5>Card example 2</h5>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur tempora ipsa dignissimos cupiditate numquam culpa corrupti alias vitae sit voluptas ut maiores autem repellendus maxime eaque, modi fugit velit similique.</p>
+
+            <a href="#">Action 2</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="base-section">
+        <h2>Formularios</h2>
+
+        <form>
+          <div>
+            <label for="text">Text</label>
+            <input type="text" id="text" name="text" placeholder="Text">
+            <small>Curabitur consequat lacus at lacus porta finibus.</small>
+          </div>
+
+          <div>
+            <label for="valid">
+              Valido
+              <input type="text" id="valid" name="valid" placeholder="Valido">
+            </label>
+
+            <label for="invalid">
+              Invalido
+              <input type="text" id="invalid" name="invalid" placeholder="Invalido">
+            </label>
+
+            <label for="disabled">
+              Deshabilitado
+              <input type="text" id="disabled" name="disabled" placeholder="Deshabilitado" disabled>
+            </label>
+          </div>
+        </form>
+      </section>
+
+      <section class="base-section">
+        <h2>Acordiones</h2>
+
+        <details>
+          <summary>Accordion 1</summary>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque urna diam, tincidunt nec porta sed, auctor id velit. Etiam venenatis nisl ut orci consequat, vitae tempus quam commodo. Nulla non mauris ipsum. Aliquam eu posuere orci. Nulla convallis lectus rutrum quam hendrerit, in facilisis elit sollicitudin. Mauris pulvinar pulvinar mi, dictum tristique elit auctor quis. Maecenas ac ipsum ultrices, porta turpis sit amet, congue turpis.</p>
+        </details>
+        <details>
+          <summary>Accordion 2</summary>
+          <ul>
+            <li>Vestibulum id elit quis massa interdum sodales.</li>
+            <li>Nunc quis eros vel odio pretium tincidunt nec quis neque.</li>
+            <li>Quisque sed eros non eros ornare elementum.</li>
+            <li>Cras sed libero aliquet, porta dolor quis, dapibus ipsum.</li>
+          </ul>
+        </details>
+      </section>
+    </div>
   </main>
 
-  <footer>© 2023 Coderhouse, todos los derechos reservados.</footer>
+  <footer class="base-footer">
+    <p class="m-none">
+      © 2023 Coderhouse, todos los derechos reservados.
+    </p>
+  </footer>
 </body>
 
 </html>

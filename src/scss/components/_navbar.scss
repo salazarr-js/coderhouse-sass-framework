@@ -1,0 +1,19 @@
+
+// BASE APP NAVBAR
+.navbar {
+  gap: 16px;
+  height: 64px;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &-brand {
+    height: 32px;
+  }
+
+  &-items {
+    gap: 16px;
+    display: flex;
+  }
+}
