@@ -1,0 +1,30 @@
+html {
+  color-scheme: light;
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  // BASE VARIABLES
+  color: $body-text-color;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  font-weight: $font-weight-base;
+  font-family: $font-primary;
+  background-color: $body-bg-color;
+}
+
+
+/** DEFAULT STYLEs */
+img {
+  display: block;
+  max-width: 100%;
+}

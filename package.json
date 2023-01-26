@@ -2,6 +2,7 @@
   "name": "coderhouse-sass-framework",
   "version": "0.0.1",
   "source": "src/index.html",
+  "browserslist": "defaults",
   "scripts": {
     "dev": "parcel",
     "build": "parcel build"
