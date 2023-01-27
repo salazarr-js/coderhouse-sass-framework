@@ -51,7 +51,7 @@
             Acepto los <a href="#">Terminos y condiciones</a>
           </label>
 
-          <button type="submit">Subscribirse</button>
+          <button class="btn btn-primary" type="submit">Subscribirse</button>
         </form>
       </section>
 
@@ -93,23 +93,46 @@
       <section class="base-section">
         <h2>Buttons</h2>
 
-        <div>
-          <button>Boton relleno</button>
-          <button>Boton con borde</button>
-          <button>Boton con plano</button>
+        <h3>Por defecto</h3>
+        <div class="flex-container">
+          <button class="btn">Relleno</button>
+          <button class="btn btn-outline">Bordeado</button>
+          <button class="btn btn-plain">Plano</button>
         </div>
 
-        <h3>Colores</h3>
-        <div>
-          <button>Boton primario</button>
-          <button>Boton secundario</button>
+        <h3>Primario</h3>
+        <div class="flex-container">
+          <button class="btn btn-primary">Relleno</button>
+          <button class="btn btn-outline btn-primary">Bordeado</button>
+          <button class="btn btn-plain btn-primary">Plano</button>
+        </div>
+
+        <h3>Secundario</h3>
+        <div class="flex-container">
+          <button class="btn btn-secondary">Relleno</button>
+          <button class="btn btn-outline btn-secondary">Bordeado</button>
+          <button class="btn btn-plain btn-secondary">Plano</button>
         </div>
 
         <h3>Tamaños</h3>
-        <div>
-          <button>Boton pequeño</button>
-          <button>Boton mediano</button>
-          <button>Boton grande</button>
+        <div class="flex-container">
+          <button class="btn btn-sm">Pequeño</button>
+          <button class="btn">Mediano</button>
+          <button class="btn btn-lg">Grande</button>
+        </div>
+
+        <h3>Block</h3>
+        <div class="flex-container">
+          <button class="btn btn-block">Boton block</button>
+          <button class="btn btn-primary btn-block">Boton block</button>
+          <button class="btn btn-secondary btn-block">Boton block</button>
+        </div>
+
+        <h3>Desabilitados</h3>
+        <div class="flex-container mb-2">
+          <button class="btn" disabled>Boton por defecto</button>
+          <button class="btn btn-primary" disabled>Boton primario</button>
+          <button class="btn btn-secondary" disabled>Boton secundario</button>
         </div>
       </section>
 

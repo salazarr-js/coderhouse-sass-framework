@@ -12,3 +12,10 @@
   padding-left: 16px;
   padding-right: 16px;
 }
+
+.flex-container {
+  gap: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items:  center;
+}

@@ -1,0 +1,76 @@
+
+/** BUTTON RELATED VARIABLES */
+$btn-radius: var(--#{$prefix}-btn-radius, 8px);
+
+.btn {
+  --#{$prefix}-btn-bg: #{$color-slate-300};
+  --#{$prefix}-btn-color: #{$color-slate-600};
+  --#{$prefix}-btn-border-color: transparent;
+  --#{$prefix}-btn-hover-bg: #{$color-slate-200};
+  --#{$prefix}-btn-hover-color: #{$color-slate-600};
+  --#{$prefix}-btn-hover-color: #{$color-slate-600};
+
+  border: 2px solid transparent;
+  cursor: pointer;
+  padding: 12px 32px;
+  display: inline-flex;
+  outline: 0;
+  font-size: $font-md;
+  transition: all .2s ease;
+  font-weight: $font-medium;
+  line-height: 1;
+  user-select: none;
+  border-radius: $btn-radius;
+  text-transform: none;
+
+  color: var(--#{$prefix}-btn-color);
+  border: 2px solid var(--#{$prefix}-btn-border-color);
+  background-color: var(--#{$prefix}-btn-bg);
+
+  // STATES
+  &:hover {
+    color: var(--#{$prefix}-btn-hover-color);
+    background-color: var(--#{$prefix}-btn-hover-bg);
+  }
+  &:focus-visible {
+    outline: 0;
+    box-shadow: 0 0 0 2px #{$color-focus};
+  }
+  &:active {
+    transform: scale3d(.95, .95, 1);
+  }
+  &:disabled {
+    opacity: .5;
+    pointer-events: none;
+  }
+
+  // TYPES
+  &.btn-outline {
+    --#{$prefix}-btn-bg: transparent;
+    --#{$prefix}-btn-border-color: #{$color-slate-300};
+    --#{$prefix}-btn-hover-bg: #{$color-slate-300};
+  }
+  &.btn-plain {
+    --#{$prefix}-btn-bg: transparent;
+    --#{$prefix}-btn-color: #{$color-slate-600};
+    --#{$prefix}-btn-hover-bg: #{$color-slate-300};
+  }
+
+  // COLOR VARIATIONS
+  @include btnColorVariation('primary', $color-primary, $color-primary-light);
+  @include btnColorVariation('secondary', $color-secondary, $color-secondary-light);
+
+  // SIZES
+  &.btn-sm {
+    padding: 8px 24px;
+    font-size: $font-sm;
+  }
+  &.btn-lg {
+    padding: 16px 48px;
+    font-size: $font-lg;
+  }
+  &.btn-block {
+    width: 100%;
+    display: block;
+  }
+}
