@@ -14,8 +14,8 @@
     position: fixed;
     box-shadow: 0 0 1em -0.125em rgb(10 10 10 / 10%),
                 0 0 0 1px rgb(10 10 10 / 2%);
-    border-bottom: 1px solid #e2e8f0;
-    background-color: #f8fafc;
+    border-bottom: 1px solid $color-slate-200;
+    background-color: $color-slate-50;
   }
 
   &-content {
@@ -25,31 +25,35 @@
   }
 
   &-footer {
-    color: #475569;
     padding: 32px 16px;
     font-size: 16px;
     font-weight: 400;
     text-align: center;
-    background-color: #cbd5e1;
+    background-color: $color-slate-300;
+    p {
+      color: $color-slate-500;
+    }
   }
 }
 
 // HERO TITLE SECTION
 .hero-section {
-  padding: 80px 16px;
-  background-color: #1e293b;
+  padding: 96px 16px;
+  background-color: $color-slate-800;
+  background-image: linear-gradient(to bottom right, $color-slate-700, $color-slate-900);
   .hero-title {
-    color: #e2e8f0;
+    color: $header-gradient-end;
     margin: 0 auto;
-    font-size: 40px;
     max-width: 520px;
     text-align: center;
-    line-height: 1.15;
+    line-height: $leading-tight;
+    font-family: $font-primary;
+    font-weight: $font-bold;
 
     background-clip: text;
     background-size: 100%;
-    background-color: #fb923c;
-    background-image: linear-gradient(to right, #f87171, #fb923c);
+    background-color: $header-gradient-end;
+    background-image: linear-gradient(to right, $header-gradient-start, $header-gradient-end);
     -webkit-text-fill-color: transparent;
 
     &:after {
@@ -59,8 +63,8 @@
       content: '';
       display: block;
       border-radius: 4px;
-      background-color: #fb923c;
-      background-image: linear-gradient(to right, #f87171, #fb923c);
+      background-color: $header-gradient-end;
+      background-image: linear-gradient(to right, $header-gradient-start, $header-gradient-end);
     }
   }
 }
