@@ -61,6 +61,15 @@ $color-red-400: #f87171 !default;
 
 $color-orange-400: #fb923c !default;
 
+/** SHADOWS */
+$shadow-color: var(--#{$prefix}-shadow-color, 51 65 85) !default;
+
+$shadow-sm: 0 1px 2px 0 rgb($shadow-color / 0.05) !default;
+$shadow: 0 1px 3px 0 rgb($shadow-color / 0.1), 0 1px 2px -1px rgb($shadow-color / 0.1) !default;
+$shadow-md: 0 4px 6px -1px rgb($shadow-color / 0.1), 0 2px 4px -2px rgb($shadow-color / 0.1) !default;
+$shadow-lg: 0 10px 15px -3px rgb($shadow-color / 0.1), 0 4px 6px -4px rgb($shadow-color / 0.1) !default;
+$shadow-xl: 0 20px 25px -5px rgb($shadow-color / 0.1), 0 8px 10px -6px rgb($shadow-color / 0.1) !default;
+
 /** THEME GLOBAL VARIABLES */
 $font-primary: var(--#{$prefix}-font-primary, $font-sans);
 $font-secondary: var(--#{$prefix}-font-secondary, $font-serif);
@@ -76,11 +85,11 @@ $header-gradient-start: var(--#{$prefix}-header-gradient-start, $color-red-400);
 $header-gradient-end: var(--#{$prefix}-header-gradient-end, $color-orange-400);
 
 $color-primary: var(--#{$prefix}-color-primary, $color-blue-500);
-$color-primary-light: var(--#{$prefix}-color-primary, $color-blue-400);
-$color-primary-dark: var(--#{$prefix}-color-primary-hover, $color-blue-600);
+$color-primary-light: var(--#{$prefix}-color-primary-light, $color-blue-400);
+$color-primary-dark: var(--#{$prefix}-color-primary-dark, $color-blue-600);
 
 $color-secondary: var(--#{$prefix}-color-secondary, $color-slate-500);
-$color-secondary-light: var(--#{$prefix}-color-secondary-hover, $color-slate-400);
-$color-secondary-dark: var(--#{$prefix}-color-secondary-hover, $color-slate-600);
+$color-secondary-light: var(--#{$prefix}-color-secondary-light, $color-slate-400);
+$color-secondary-dark: var(--#{$prefix}-color-secondary-dark, $color-slate-600);
 
 $color-focus: var(--#{$prefix}-color-focus, $color-slate-400)

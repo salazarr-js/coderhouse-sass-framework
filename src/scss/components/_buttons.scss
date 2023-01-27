@@ -22,6 +22,7 @@ $btn-radius: var(--#{$prefix}-btn-radius, 8px);
   user-select: none;
   border-radius: $btn-radius;
   text-transform: none;
+  text-decoration: none;
 
   color: var(--#{$prefix}-btn-color);
   border: 2px solid var(--#{$prefix}-btn-border-color);
@@ -34,7 +35,7 @@ $btn-radius: var(--#{$prefix}-btn-radius, 8px);
   }
   &:focus-visible {
     outline: 0;
-    box-shadow: 0 0 0 2px #{$color-focus};
+    box-shadow: 0 0 0 2px $color-focus;
   }
   &:active {
     transform: scale3d(.95, .95, 1);
@@ -72,5 +73,6 @@ $btn-radius: var(--#{$prefix}-btn-radius, 8px);
   &.btn-block {
     width: 100%;
     display: block;
+    text-align: center;
   }
 }

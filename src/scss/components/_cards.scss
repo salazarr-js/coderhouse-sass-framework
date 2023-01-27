@@ -1,0 +1,44 @@
+
+$card-bg: var(--#{$prefix}-card-bg, white);
+$card-radius: var(--#{$prefix}-card-radius, 12px);
+$card-border: var(--#{$prefix}-card-border, $color-slate-200);
+
+.card {
+  overflow: hidden;
+  position: relative;
+  transition: all .3s ease;
+  box-shadow: $shadow-xl;
+  border-radius: $card-radius;
+
+  border: 1px solid $card-border;
+  background-color: $card-bg;
+
+  &:hover {
+    box-shadow: $shadow-md;
+  }
+
+  &-content {
+    padding: 24px 18px;
+  }
+
+  &-title {
+    font-size: 24px;
+    font-weight: $font-bold;
+  }
+
+  &-image {
+    width: 100%;
+    height: auto;
+  }
+
+  &-text {
+    margin-bottom: 24px;
+  }
+
+  &-actions {
+    gap: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
