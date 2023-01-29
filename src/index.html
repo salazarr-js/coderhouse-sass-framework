@@ -19,7 +19,7 @@
       <img class="navbar-brand" src="./assets/coder-dark.svg" alt="Coderhouse logo">
 
       <div class="navbar-items">
-        <select>
+        <select class="select">
           <option>Light</option>
           <option>Dark</option>
           <option>Coder</option>
@@ -42,14 +42,9 @@
         <h2>Preview</h2>
         <p>Sed ultricies dolor non ante vulputate hendrerit. Vivamus sit amet suscipit sapien. Nulla iaculis eros a elit pharetra egestas.</p>
 
-        <form>
-          <input type="text" name="name" placeholder="Nombre" required>
-          <input type="email" name="email" placeholder="Correo electrónico" required>
-
-          <label for="terms">
-            <input type="checkbox" role="switch" id="terms" name="terms" required>
-            Acepto los <a href="#">Terminos y condiciones</a>
-          </label>
+        <form class="flex-container">
+          <input class="input" type="text" name="name" placeholder="Nombre" required>
+          <input class="input" type="email" name="email" placeholder="Correo electrónico" required>
 
           <button class="btn btn-primary" type="submit">Subscribirse</button>
         </form>
@@ -187,27 +182,21 @@
         <h2>Formularios</h2>
 
         <form>
-          <div>
-            <label for="text">Text</label>
-            <input type="text" id="text" name="text" placeholder="Text">
-            <small>Curabitur consequat lacus at lacus porta finibus.</small>
+          <div class="input-container">
+            <label class="input-label" for="input-base">Input base</label>
+            <input class="input" type="text" id="input-base" placeholder="Input example">
+            <p class="input-info">Curabitur consequat lacus at lacus porta finibus.</p>
           </div>
 
           <div>
-            <label for="valid">
-              Valido
-              <input type="text" id="valid" name="valid" placeholder="Valido">
-            </label>
+            <label class="input-label" for="valid">Valido</label>
+            <input class="input input-valid" type="text" id="valid" placeholder="Valido">
 
-            <label for="invalid">
-              Invalido
-              <input type="text" id="invalid" name="invalid" placeholder="Invalido">
-            </label>
+            <label class="input-label" for="invalid">Invalido</label>
+            <input class="input input-invalid" type="text" id="invalid" name="invalid" placeholder="Invalido">
 
-            <label for="disabled">
-              Deshabilitado
-              <input type="text" id="disabled" name="disabled" placeholder="Deshabilitado" disabled>
-            </label>
+            <label class="input-label" for="disabled">Deshabilitado</label>
+            <input class="input" type="text" id="disabled" placeholder="Deshabilitado" disabled>
           </div>
         </form>
       </section>

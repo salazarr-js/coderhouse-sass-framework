@@ -1,0 +1,68 @@
+
+.input-container {
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  width: 100%;
+  color: $color-slate-600;
+  border: 1px solid transparent;
+  display: block;
+  padding: 10px 18px;
+  outline: 0;
+  font-size: $font-md;
+  transition: all .2s ease;
+  font-weight: $font-medium;
+  line-height: $leading-normal;
+  padding-right: 24px;
+  background-color: white;
+
+  border-color: $color-slate-300;
+  border-radius: 4px;
+
+  &::placeholder {
+    color: $color-slate-600;
+    opacity: .5;
+  }
+  &:focus {
+    outline: 0;
+    border-color: $color-slate-400;
+    box-shadow: 0 0 0 2px $color-slate-300;
+  }
+  &:disabled {
+    opacity: .5;
+    pointer-events: none;
+  }
+
+  // STATES
+  &.input-valid {
+    border-color: $color-green-400;
+    &:focus {
+      box-shadow: 0 0 0 2px $color-green-300;
+    }
+  }
+  &.input-invalid {
+    border-color: $color-red-400;
+    &:focus {
+      box-shadow: 0 0 0 2px $color-red-300;
+    }
+  }
+
+  &-label {
+    cursor: pointer;
+    display: inline-block;
+    font-size: $font-lg;
+    line-height: $leading-normal;
+    user-select: none;
+    font-weight: $font-normal;
+  }
+
+  &-info {
+    color: $color-slate-400;
+    display: block;
+    font-size: $font-sm;
+    line-height: $leading-normal;
+  }
+}

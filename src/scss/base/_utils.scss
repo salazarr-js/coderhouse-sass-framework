@@ -16,6 +16,8 @@
 .flex-container {
   gap: 16px;
   display: flex;
-  flex-wrap: wrap;
   align-items:  center;
+  &.wrap {
+    flex-wrap: wrap;
+  }
 }
