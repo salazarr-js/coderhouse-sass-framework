@@ -10,6 +10,17 @@
 
   &-brand {
     height: 32px;
+    display: none;
+    &#logo-light {
+      @include theme(coder) {
+        display: block;
+      }
+    }
+    &#logo-dark {
+      @include theme(light) {
+        display: block;
+      }
+    }
   }
 
   &-items {

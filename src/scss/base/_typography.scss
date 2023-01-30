@@ -1,6 +1,6 @@
 
 h1, h2, h3, h4, h5, h6 {
-  color: $color-heading-text;
+  color: $heading-text-color;
   font-weight: $font-medium;
   line-height: $leading-tight;
   font-family: $font-secondary;
@@ -45,7 +45,7 @@ h6 {
 }
 
 p {
-  color: $color-primary-text;
+  color: $primary-text-color;
   margin: 16px 0;
   font-family: $font-primary;
   font-weight: $font-normal;

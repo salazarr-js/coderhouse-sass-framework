@@ -1,16 +1,17 @@
 
 
 .link {
-  color: $color-primary-light;
+  color: $color-primary;
   padding: 2px 4px;
   display: inline-block;
+  opacity: .8;
   transition: all .2s ease-in-out;
   line-height: $leading-normal;
   font-weight: $font-normal;
   text-decoration: none;
 
   &:hover {
-    color: $color-primary;
+    opacity: 1;
     &:after {
       transform: scale3d(1, 1, 1);
     }

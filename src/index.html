@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="es" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,13 +15,13 @@
 
   <header class="base-header">
     <nav class="navbar container">
-      <img class="navbar-brand" src="./assets/coder-dark.svg" alt="Coderhouse logo">
+      <img id="logo-dark" class="navbar-brand" src="./assets/coder-dark.svg" alt="Coderhouse logo">
+      <img id="logo-light" class="navbar-brand" src="./assets/coder-light.svg" alt="Coderhouse logo">
 
       <div class="navbar-items">
-        <select class="select">
-          <option>Light</option>
-          <option>Dark</option>
-          <option>Coder</option>
+        <select class="select" id="theme-select">
+          <option value="light">Light</option>
+          <option value="coder">Coder</option>
         </select>
       </div>
     </nav>
@@ -54,7 +53,7 @@
         <h2>Tipografía</h2>
         <p>Aliquam lobortis vitae nibh nec rhoncus. Morbi mattis neque eget efficitur feugiat. Vivamus porta nunc a erat mattis, mattis feugiat turpis pretium. Quisque sed tristique felis.</p>
 
-        <h3>Lists</h3>
+        <h3>Listas</h3>
         <ul>
           <li>Aliquam lobortis lacus eu libero ornare facilisis.</li>
           <li>Nam et magna at libero scelerisque egestas.</li>
@@ -62,7 +61,7 @@
           <li>Proin ultricies turpis et volutpat vehicula.</li>
         </ul>
 
-        <h3>Elementos en linea </h3>
+        <h3>Elementos en línea</h3>
         <div class="flex-container">
           <a href="#" class="link primary">Link de prueba</a>
           <a href="#" class="link">Link de prueba</a>
@@ -86,7 +85,7 @@
       </section>
 
       <section class="base-section">
-        <h2>Buttons</h2>
+        <h2>Botones</h2>
 
         <h3>Por defecto</h3>
         <div class="flex-container">
@@ -116,7 +115,7 @@
           <button class="btn btn-lg">Grande</button>
         </div>
 
-        <h3>Block</h3>
+        <h3>Bloque</h3>
         <div class="flex-container">
           <button class="btn btn-block">Boton block</button>
           <button class="btn btn-primary btn-block">Boton block</button>
@@ -189,9 +188,6 @@
           </div>
 
           <div>
-            <label class="input-label" for="valid">Valido</label>
-            <input class="input input-valid" type="text" id="valid" placeholder="Valido">
-
             <label class="input-label" for="invalid">Invalido</label>
             <input class="input input-invalid" type="text" id="invalid" name="invalid" placeholder="Invalido">
 
@@ -235,7 +231,9 @@
       © 2023 Coderhouse, todos los derechos reservados.
     </p>
   </footer>
-</body>
 
+
+  <script type="module" src="app.js"></script>
+</body>
 </html>
 <!--  -->

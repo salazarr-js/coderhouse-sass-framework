@@ -1,0 +1,92 @@
+@font-face {
+  font-family: "DM Sans";
+  src: url(https://core.coderhouse.com\/assets/fonts/DM-Sans-Bold.eot);
+  src: url(https://core.coderhouse.com\/assets/fonts/DM-Sans-Bold.eot?#iefix) format("embedded-opentype"),
+       url(https://core.coderhouse.com\/assets/fonts/DM-Sans-Bold.woff2) format("woff2"),
+       url(https://core.coderhouse.com\/assets/fonts/DM-Sans-Bold.woff) format("woff"),
+       url(https://core.coderhouse.com\/assets/fonts/DM-Sans-Bold.ttf) format("truetype");
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url(https://core.coderhouse.com\/assets/fonts/DM-Sans-Medium.eot);
+  src: url(https://core.coderhouse.com\/assets/fonts/DM-Sans-Medium.eot?#iefix) format("embedded-opentype"),
+       url(https://core.coderhouse.com\/assets/fonts/DM-Sans-Medium.woff2) format("woff2"),
+       url(https://core.coderhouse.com\/assets/fonts/DM-Sans-Medium.woff) format("woff"),
+       url(https://core.coderhouse.com\/assets/fonts/DM-Sans-Medium.ttf)format("truetype");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url(https://core.coderhouse.com\/assets/fonts/DM-Sans-Regular.eot);
+  src: url(https://core.coderhouse.com\/assets/fonts/DM-Sans-Regular.eot?#iefix) format("embedded-opentype"),
+       url(https://core.coderhouse.com\/assets/fonts/DM-Sans-Regular.woff2) format("woff2"),
+       url(https://core.coderhouse.com\/assets/fonts/DM-Sans-Regular.woff) format("woff"),
+       url(https://core.coderhouse.com\/assets/fonts/DM-Sans-Regular.ttf) format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Untitled Sans";
+  src: url(https://core.coderhouse.com\/assets/fonts/UntitledSans-Medium.eot);
+  src: url(https://core.coderhouse.com\/assets/fonts/UntitledSans-Medium.eot?#iefix) format("embedded-opentype"),
+       url(https://core.coderhouse.com\/assets/fonts/UntitledSans-Medium.woff2) format("woff2"),
+       url(https://core.coderhouse.com\/assets/fonts/UntitledSans-Medium.woff) format("woff"),
+       url(https://core.coderhouse.com\/assets/fonts/UntitledSans-Medium.ttf) format("truetype");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Untitled Sans";
+  src: url(https://core.coderhouse.com\/assets/fonts/UntitledSans-Regular.eot);
+  src: url(https://core.coderhouse.com\/assets/fonts/UntitledSans-Regular.eot?#iefix) format("embedded-opentype"),
+       url(https://core.coderhouse.com\/assets/fonts/UntitledSans-Regular.woff2) format("woff2"),
+       url(https://core.coderhouse.com\/assets/fonts/UntitledSans-Regular.woff) format("woff"),
+       url(https://core.coderhouse.com\/assets/fonts/UntitledSans-Regular.ttf) format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+:root {
+  &[data-theme=coder] {
+    color-scheme: dark;
+
+    --color: #1f2023;
+    --color: #26272c;
+    --color: #2a2b32;
+    --color: #393b43;
+    --color: #ea90ff;
+    --color: rgb(255 137 111);
+
+
+    --#{$prefix}-font-primary: Untitled Sans;
+    --#{$prefix}-font-secondary: DM Sans;
+
+    --#{$prefix}-body-bg-color: #1f2023;
+    --#{$prefix}-heading-text-color: #FFFFFF;
+    --#{$prefix}-primary-text-color: #bebebe;
+
+    --#{$prefix}-header-bg-color: #2e2f36;
+    --#{$prefix}-header-border-color: #393b43;
+
+    --#{$prefix}-footer-bg-color: #393b43;
+
+    --#{$prefix}-hero-text-color: #1f2023;
+    --#{$prefix}-hero-gradient-start: #ea90ff;
+    --#{$prefix}-hero-gradient-end: #eaff6a;
+
+    --#{$prefix}-color-primary: #eaff6a;
+
+    --#{$prefix}-color-secondary: #393b43;
+
+    --#{$prefix}-chevron: url("data:image/svg+xml, <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgb(234, 255, 106)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'></polyline></svg>");
+
+  }
+}

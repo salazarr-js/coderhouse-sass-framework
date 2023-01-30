@@ -22,3 +22,11 @@
     }
   }
 }
+
+
+/** CREATE A PARENT SELECTOR WITH `data-theme` */
+@mixin theme($theme) {
+  @at-root #{selector-nest(':root[data-theme=#{$theme}]', &)} {
+    @content;
+  }
+}
