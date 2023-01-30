@@ -1,4 +1,11 @@
 
+$input-bg-color: var(--#{$prefix}-input-bg-color, white);
+$input-text-color: var(--#{$prefix}-input-text-color, $primary-text-color);
+
+$input-border-color: var(--#{$prefix}-input-border-color, $color-slate-300);
+$input-focus-border-color: var(--#{$prefix}-input-focus-border-color, $color-slate-400);
+$input-invalid-color: var(--#{$prefix}-input-invalid-color, $color-red-400);
+
 .input-container {
   gap: 8px;
   display: flex;
@@ -7,8 +14,8 @@
 
 .input {
   width: 100%;
-  color: $color-slate-600;
-  border: 1px solid transparent;
+  color: $input-text-color;
+  border: 1px solid $input-border-color;
   display: block;
   padding: 10px 18px;
   outline: 0;
@@ -17,19 +24,16 @@
   font-weight: $font-medium;
   line-height: $leading-normal;
   padding-right: 24px;
-  background-color: white;
-
-  border-color: $color-slate-300;
   border-radius: 4px;
+  background-color: $input-bg-color;
 
   &::placeholder {
-    color: $color-slate-600;
+    color: $input-text-color;
     opacity: .5;
   }
   &:focus {
     outline: 0;
-    border-color: $color-slate-400;
-    box-shadow: 0 0 0 2px $color-slate-300;
+    border-color: $input-focus-border-color;
   }
   &:disabled {
     opacity: .5;
@@ -38,9 +42,9 @@
 
   // STATES
   &.input-invalid {
-    border-color: $color-red-400;
+    border-color: $input-invalid-color;
     &:focus {
-      box-shadow: 0 0 0 2px $color-red-300;
+      border-color: $input-focus-border-color;
     }
   }
 
@@ -54,7 +58,8 @@
   }
 
   &-info {
-    color: $color-slate-400;
+    margin: 0;
+    opacity: .75;
     display: block;
     font-size: $font-sm;
     line-height: $leading-normal;

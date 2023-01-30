@@ -34,6 +34,10 @@ $accordion-content-bg: var(--#{$prefix}-accordion-content-bg, white);
     &:hover {
       background-color: $accordion-title-hover-bg;
     }
+    &:focus {
+      outline: 0;
+      background-color: $accordion-title-hover-bg;
+    }
     &:after {
       top: 16px;
       right: 16px;
