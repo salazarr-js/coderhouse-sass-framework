@@ -96,4 +96,7 @@ $color-secondary: var(--#{$prefix}-color-secondary, $color-slate-500);
 $color-secondary-light: var(--#{$prefix}-color-secondary-light, $color-slate-400);
 $color-secondary-dark: var(--#{$prefix}-color-secondary-dark, $color-slate-600);
 
-$color-focus: var(--#{$prefix}-color-focus, $color-slate-400)
+$color-focus: var(--#{$prefix}-color-focus, $color-slate-400);
+
+
+$chevron: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgb(99, 116, 140)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");

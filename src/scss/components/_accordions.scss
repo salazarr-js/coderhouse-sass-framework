@@ -1,0 +1,51 @@
+
+.accordion {
+  --#{$prefix}accordion-chevron-angle: 0deg;
+
+  overflow: hidden;
+  appearance: none;
+  box-shadow: $shadow;
+  border-radius: 8px;
+  background-color: white;
+
+  &-item {
+    &[open] {
+      --#{$prefix}accordion-chevron-angle: -90deg;
+    }
+  }
+
+  &-title {
+    cursor: pointer;
+    padding: 16px;
+    position: relative;
+    font-size: $font-lg;
+    box-shadow: 0 0 0 1px $color-slate-200;
+    transition: all .2s ease-in-out;
+    font-weight: $font-bold;
+    line-height: $leading-normal;
+    user-select: none;
+    background-color: $color-slate-50;
+    &:hover {
+      background-color: $color-slate-100;
+    }
+    &:after {
+      top: 16px;
+      right: 16px;
+      width: 32px;
+      height: 32px;
+      content: '';
+      position: absolute;
+      transform: rotate(var(--#{$prefix}accordion-chevron-angle));
+      transition: all .2s ease-in-out;
+      background-image: $chevron;
+      background-position: center;
+    }
+    &::marker {
+      content: '';
+    }
+  }
+
+  &-content {
+    padding: 24px;
+  }
+}
