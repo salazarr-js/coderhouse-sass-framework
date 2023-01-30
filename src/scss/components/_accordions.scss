@@ -1,32 +1,38 @@
 
+$accordion-title-color: var(--#{$prefix}-accordion-title-color, $color-slate-600);
+$accordion-title-bg: var(--#{$prefix}-accordion-title-bg, $color-slate-50);
+$accordion-title-hover-bg: var(--#{$prefix}-accordion-title-hover-bg, $color-slate-100);
+$accordion-title-border: var(--#{$prefix}-accordion-title-border, $color-slate-200);
+
+$accordion-content-bg: var(--#{$prefix}-accordion-content-bg, white);
+
 .accordion {
-  --#{$prefix}accordion-chevron-angle: 0deg;
+  --#{$prefix}-accordion-chevron-angle: 0deg;
 
   overflow: hidden;
   appearance: none;
   box-shadow: $shadow;
   border-radius: 8px;
-  background-color: white;
-
   &-item {
     &[open] {
-      --#{$prefix}accordion-chevron-angle: -90deg;
+      --#{$prefix}-accordion-chevron-angle: -90deg;
     }
   }
 
   &-title {
+    color: $accordion-title-color;
     cursor: pointer;
     padding: 16px;
     position: relative;
     font-size: $font-lg;
-    box-shadow: 0 0 0 1px $color-slate-200;
+    box-shadow: 0 0 0 1px $accordion-title-border;
     transition: all .2s ease-in-out;
-    font-weight: $font-bold;
+    font-weight: $font-medium;
     line-height: $leading-normal;
     user-select: none;
-    background-color: $color-slate-50;
+    background-color: $accordion-title-bg;
     &:hover {
-      background-color: $color-slate-100;
+      background-color: $accordion-title-hover-bg;
     }
     &:after {
       top: 16px;
@@ -35,7 +41,7 @@
       height: 32px;
       content: '';
       position: absolute;
-      transform: rotate(var(--#{$prefix}accordion-chevron-angle));
+      transform: rotate(var(--#{$prefix}-accordion-chevron-angle));
       transition: all .2s ease-in-out;
       background-image: $chevron;
       background-position: center;
@@ -47,5 +53,7 @@
 
   &-content {
     padding: 24px;
+    padding-top: 32px;
+    background-color: $accordion-content-bg;
   }
 }
