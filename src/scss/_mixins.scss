@@ -1,4 +1,3 @@
-
 /** CREATE A BTN COLOR VARIATION */
 @mixin btnColorVariation($class, $color, $color-light, $color-contrast) {
   &.btn-#{$class} {
@@ -69,5 +68,18 @@
 @mixin xl() {
   @include break-up(xl) {
     @content;
+  }
+}
+
+/** GENERATE SPACING CLASS UTILITIES */
+@mixin generate-spacing($prop, $short) {
+  @each $spaceKey, $spaceValue in $spacing {
+    @each $dirKey, $dirs in $directions {
+      .#{$short}#{$dirKey}-#{$spaceKey} {
+        @each $dir in $dirs {
+          #{$prop}-#{$dir}: $spaceValue;
+        }
+      }
+    }
   }
 }

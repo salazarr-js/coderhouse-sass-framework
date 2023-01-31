@@ -33,3 +33,7 @@
     transition: all .2s ease-in-out;
   }
 }
+
+/** GENERATE `margin` & `padding` utilities */
+@include generate-spacing(margin, m);
+@include generate-spacing(padding, p);
