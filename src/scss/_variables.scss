@@ -97,3 +97,10 @@ $color-secondary-light: var(--#{$prefix}-color-secondary-light, $color-slate-400
 $color-secondary-dark: var(--#{$prefix}-color-secondary-dark, $color-slate-600);
 
 $color-focus: var(--#{$prefix}-color-focus, $color-slate-400);
+
+$breakpoints: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+) !default;

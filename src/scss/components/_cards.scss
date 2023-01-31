@@ -38,7 +38,26 @@ $card-border: var(--#{$prefix}-card-border, $color-slate-200);
   &-actions {
     gap: 16px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: flex-start;
+  }
+}
+
+.cards-container {
+  gap: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+
+  .card {
+    flex: 0 0 auto;
+
+    @include sm {
+      width: calc(50% - 8px);
+    }
+    @include xl {
+      width: calc(25% - 12px);
+    }
   }
 }

@@ -16,6 +16,7 @@ $btn-radius: var(--#{$prefix}-btn-radius, 8px);
   display: inline-flex;
   outline: 0;
   font-size: $font-md;
+  text-align: center;
   transition: all .2s ease;
   font-weight: $font-medium;
   line-height: 1;
@@ -73,6 +74,5 @@ $btn-radius: var(--#{$prefix}-btn-radius, 8px);
   &.btn-block {
     width: 100%;
     display: block;
-    text-align: center;
   }
 }
