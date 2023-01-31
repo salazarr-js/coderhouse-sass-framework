@@ -1,17 +1,17 @@
 
 /** CREATE A BTN COLOR VARIATION */
-@mixin btnColorVariation($class, $color, $color-light) {
+@mixin btnColorVariation($class, $color, $color-light, $color-contrast) {
   &.btn-#{$class} {
     --#{$prefix}-btn-bg: #{$color};
-    --#{$prefix}-btn-color: white;
+    --#{$prefix}-btn-color: #{$color-contrast};
     --#{$prefix}-btn-hover-bg: #{$color-light};
-    --#{$prefix}-btn-hover-color: white;
+    --#{$prefix}-btn-hover-color: #{$color-contrast};
 
     &.btn-outline {
       --#{$prefix}-btn-bg: transparent;
       --#{$prefix}-btn-color: #{$color};
       --#{$prefix}-btn-hover-bg: #{$color};
-      --#{$prefix}-btn-hover-color: white;
+      --#{$prefix}-btn-hover-color: #{$color-contrast};
       --#{$prefix}-btn-border-color: #{$color};
     }
 

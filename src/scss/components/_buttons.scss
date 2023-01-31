@@ -8,7 +8,6 @@ $btn-radius: var(--#{$prefix}-btn-radius, 8px);
   --#{$prefix}-btn-border-color: transparent;
   --#{$prefix}-btn-hover-bg: #{$color-slate-200};
   --#{$prefix}-btn-hover-color: #{$color-slate-600};
-  --#{$prefix}-btn-hover-color: #{$color-slate-600};
 
   border: 2px solid transparent;
   cursor: pointer;
@@ -49,18 +48,29 @@ $btn-radius: var(--#{$prefix}-btn-radius, 8px);
   // TYPES
   &.btn-outline {
     --#{$prefix}-btn-bg: transparent;
+    --#{$prefix}-btn-color: #{$body-text-color};
     --#{$prefix}-btn-border-color: #{$color-slate-300};
     --#{$prefix}-btn-hover-bg: #{$color-slate-300};
   }
   &.btn-plain {
     --#{$prefix}-btn-bg: transparent;
-    --#{$prefix}-btn-color: #{$color-slate-600};
+    --#{$prefix}-btn-color: #{$body-text-color};
     --#{$prefix}-btn-hover-bg: #{$color-slate-300};
   }
 
   // COLOR VARIATIONS
-  @include btnColorVariation('primary', $color-primary, $color-primary-light);
-  @include btnColorVariation('secondary', $color-secondary, $color-secondary-light);
+  @include btnColorVariation('primary', $color-primary, $color-primary-hover, $color-primary-contrast);
+  @include btnColorVariation('secondary', $color-secondary, $color-secondary-hover, $color-secondary-contrast);
+
+  // SECONDARY `outline` & `plain` FIX
+  &.btn-secondary {
+    &.btn-outline {
+      --#{$prefix}-btn-color: #{$body-text-color};
+    }
+    &.btn-plain {
+      --#{$prefix}-btn-color: #{$body-text-color};
+    }
+  }
 
   // SIZES
   &.btn-sm {

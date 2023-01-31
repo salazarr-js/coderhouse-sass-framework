@@ -1,6 +1,6 @@
 
 $input-bg-color: var(--#{$prefix}-input-bg-color, white);
-$input-text-color: var(--#{$prefix}-input-text-color, $primary-text-color);
+$input-text-color: var(--#{$prefix}-input-text-color, $body-text-color);
 
 $input-border-color: var(--#{$prefix}-input-border-color, $color-slate-300);
 $input-focus-border-color: var(--#{$prefix}-input-focus-border-color, $color-slate-400);
@@ -10,6 +10,8 @@ $input-invalid-color: var(--#{$prefix}-input-invalid-color, $color-red-400);
   gap: 8px;
   display: flex;
   flex-direction: column;
+
+  margin-bottom: 16px;
 }
 
 .input {

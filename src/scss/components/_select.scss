@@ -1,7 +1,7 @@
 
 $select-bg-color: var(--#{$prefix}-select-bg-color, $color-slate-50);
 $select-hover-color: var(--#{$prefix}-select-hover-color, white);
-$select-text-color: var(--#{$prefix}-select-text-color, $primary-text-color);
+$select-text-color: var(--#{$prefix}-select-text-color, $body-text-color);
 $select-border-color: var(--#{$prefix}-select-border-color, $color-slate-400);
 $select-focus-color: var(--#{$prefix}-select-focus-color, $color-slate-500);
 

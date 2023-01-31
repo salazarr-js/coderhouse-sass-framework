@@ -7,7 +7,7 @@ $hero-gradient-start: var(--#{$prefix}-hero-gradient-start, $color-slate-700);
 $hero-gradient-end: var(--#{$prefix}-hero-gradient-end, $color-slate-900);
 
 $footer-bg-color: var(--#{$prefix}-footer-bg-color, $color-slate-300);
-$footer-text-color: var(--#{$prefix}-footer-text-color, $primary-text-color);
+$footer-text-color: var(--#{$prefix}-footer-text-color, $body-text-color);
 
 // BASE APP LAYOUT WITH STICKY FOOTER
 .base {

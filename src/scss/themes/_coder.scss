@@ -67,8 +67,8 @@
     --#{$prefix}-font-secondary: DM Sans;
 
     --#{$prefix}-body-bg-color: #1f2023;
+    --#{$prefix}-body-text-color: #bebebe;
     --#{$prefix}-heading-text-color: #FFFFFF;
-    --#{$prefix}-primary-text-color: #bebebe;
 
     --#{$prefix}-header-bg-color: #2e2f36;
     --#{$prefix}-header-border-color: #393b43;
@@ -80,8 +80,12 @@
     --#{$prefix}-hero-gradient-end: #eaff6a;
 
     --#{$prefix}-color-primary: #eaff6a;
+    --#{$prefix}-color-primary-hover: #d4e761;
+    --#{$prefix}-color-primary-contrast: #1f2023;
 
     --#{$prefix}-color-secondary: #393b43;
+    --#{$prefix}-color-secondary-hover: #2b2c32;
+    --#{$prefix}-color-secondary-contrast: #d4e761;
 
     --#{$prefix}-accordion-title-color: #FFFFFF;
     --#{$prefix}-accordion-title-bg: #2a2b32;

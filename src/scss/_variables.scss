@@ -55,6 +55,7 @@ $color-slate-700: #334155 !default;
 $color-slate-800: #1e293b !default;
 $color-slate-900: #0f172a !default;
 
+$color-blue-50: #eff6ff !default;
 $color-blue-300: #93c5fd !default;
 $color-blue-400: #60a5fa !default;
 $color-blue-500: #3b82f6 !default;
@@ -85,16 +86,16 @@ $font-weight-base: var(--#{$prefix}-font-weight-base, $font-normal);
 $line-height-base: var(--#{$prefix}-line-height-base, $leading-normal);
 
 $body-bg-color: var(--#{$prefix}-body-bg-color, $color-slate-100);
+$body-text-color: var(--#{$prefix}-body-text-color, $color-slate-500);
 $heading-text-color: var(--#{$prefix}-heading-text-color, $color-slate-700);
-$primary-text-color: var(--#{$prefix}-primary-text-color, $color-slate-500);
 
 $color-primary: var(--#{$prefix}-color-primary, $color-blue-500);
-$color-primary-light: var(--#{$prefix}-color-primary-light, $color-blue-400);
-$color-primary-dark: var(--#{$prefix}-color-primary-dark, $color-blue-600);
+$color-primary-hover: var(--#{$prefix}-color-primary-hover, $color-blue-400);
+$color-primary-contrast: var(--#{$prefix}-color-primary-contrast, $color-blue-50);
 
 $color-secondary: var(--#{$prefix}-color-secondary, $color-slate-500);
-$color-secondary-light: var(--#{$prefix}-color-secondary-light, $color-slate-400);
-$color-secondary-dark: var(--#{$prefix}-color-secondary-dark, $color-slate-600);
+$color-secondary-hover: var(--#{$prefix}-color-secondary-hover, $color-slate-400);
+$color-secondary-contrast: var(--#{$prefix}-color-secondary-contrast, $color-slate-50);
 
 $color-focus: var(--#{$prefix}-color-focus, $color-slate-400);
 
