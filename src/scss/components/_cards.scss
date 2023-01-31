@@ -52,6 +52,7 @@ $card-border: var(--#{$prefix}-card-border, $color-slate-200);
 
   .card {
     flex: 0 0 auto;
+    width: 100%;
 
     @include sm {
       width: calc(50% - 8px);
