@@ -3,11 +3,14 @@ html {
   scroll-behavior: smooth;
 }
 
+html, body {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
 body {
   position: relative;
   min-height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
 
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;

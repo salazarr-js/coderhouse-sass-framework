@@ -59,7 +59,6 @@
     color-scheme: dark;
 
     --color: #1f2023;
-    --color: #26272c;
     --color: #2a2b32;
     --color: #393b43;
     --color: #ea90ff;
@@ -88,13 +87,17 @@
     --#{$prefix}-accordion-title-bg: #2a2b32;
     --#{$prefix}-accordion-title-hover-bg: #393b43;
     --#{$prefix}-accordion-title-border: #393b43;
-    --#{$prefix}-accordion-content-bg: #26272c;
+    --#{$prefix}-accordion-content-bg: #2a2b32;
 
     --#{$prefix}-input-bg-color: #27282D;
     --#{$prefix}-input-border-color: #393b43;
     --#{$prefix}-input-focus-border-color: #eaff6a;
     --#{$prefix}-input-invalid-color: #ff896f;
 
+    --#{$prefix}-select-bg-color: #2e2f36;
+    --#{$prefix}-select-hover-color: #393b43;
+    --#{$prefix}-select-border-color: transparent;
+    --#{$prefix}-select-focus-color: #eaff6a;
 
     --#{$prefix}-chevron: url("data:image/svg+xml, <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgb(234, 255, 106)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'></polyline></svg>");
   }

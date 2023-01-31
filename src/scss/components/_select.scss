@@ -1,27 +1,35 @@
+
+$select-bg-color: var(--#{$prefix}-select-bg-color, $color-slate-50);
+$select-hover-color: var(--#{$prefix}-select-hover-color, white);
+$select-text-color: var(--#{$prefix}-select-text-color, $primary-text-color);
+$select-border-color: var(--#{$prefix}-select-border-color, $color-slate-400);
+$select-focus-color: var(--#{$prefix}-select-focus-color, $color-slate-500);
+
 .select {
   border: 1px solid transparent;
   cursor: pointer;
-  padding: 8px 12px;
+  padding: 8px 16px;
   font-size: $font-md;
   appearance: none;
   transition: all .2s ease;
   line-height: $leading-normal;
-  padding-right: 24px;
-  background-color: white;
-  background-size: 1.5em auto;
-  background-image: $chevron;
-  background-position: right center;
-
-
-  color: $color-slate-600;
-  border-color: $color-slate-400;
+  user-select: none;
   border-radius: 8px;
+  padding-right: 32px;
+  background-size: 24px auto;
+  background-image: $chevron;
+  background-position: calc(100% - 4px) center;
+
+  color: $select-text-color;
+  border-color: $select-border-color;
+  background-color: $select-bg-color;
 
   &:hover {
-    border-color: $color-slate-500;
+    background-color: $select-hover-color;
   }
   &:focus {
     outline: 0;
-    box-shadow: 0 0 0 2px $color-slate-300;
+    box-shadow: 0 0 0 1px $select-focus-color;
+    border-color: $select-focus-color;
   }
 }
