@@ -1,7 +1,7 @@
 
-$card-bg: var(--#{$prefix}-card-bg, white);
-$card-radius: var(--#{$prefix}-card-radius, 12px);
-$card-border: var(--#{$prefix}-card-border, $color-slate-200);
+$card-bg: var(--#{$prefix}-card-bg, white) !default;
+$card-radius: var(--#{$prefix}-card-radius, 12px) !default;
+$card-border: var(--#{$prefix}-card-border, $color-slate-200) !default;
 
 .card {
   overflow: hidden;

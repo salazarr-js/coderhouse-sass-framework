@@ -1,10 +1,10 @@
 
-$input-bg-color: var(--#{$prefix}-input-bg-color, white);
-$input-text-color: var(--#{$prefix}-input-text-color, $body-text-color);
+$input-bg-color: var(--#{$prefix}-input-bg-color, white) !default;
+$input-text-color: var(--#{$prefix}-input-text-color, $body-text-color) !default;
 
-$input-border-color: var(--#{$prefix}-input-border-color, $color-slate-300);
-$input-focus-border-color: var(--#{$prefix}-input-focus-border-color, $color-slate-400);
-$input-invalid-color: var(--#{$prefix}-input-invalid-color, $color-red-400);
+$input-border-color: var(--#{$prefix}-input-border-color, $color-slate-300) !default;
+$input-focus-border-color: var(--#{$prefix}-input-focus-border-color, $color-slate-400) !default;
+$input-invalid-color: var(--#{$prefix}-input-invalid-color, $color-red-400) !default;
 
 .input-container {
   gap: 8px;

@@ -1,6 +1,6 @@
 
 /** BUTTON RELATED VARIABLES */
-$btn-radius: var(--#{$prefix}-btn-radius, 8px);
+$btn-radius: var(--#{$prefix}-btn-radius, 8px) !default;
 
 .btn {
   --#{$prefix}-btn-bg: #{$color-slate-300};

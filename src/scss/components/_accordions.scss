@@ -1,10 +1,10 @@
 
-$accordion-title-color: var(--#{$prefix}-accordion-title-color, $color-slate-600);
-$accordion-title-bg: var(--#{$prefix}-accordion-title-bg, $color-slate-50);
-$accordion-title-hover-bg: var(--#{$prefix}-accordion-title-hover-bg, $color-slate-100);
-$accordion-title-border: var(--#{$prefix}-accordion-title-border, $color-slate-200);
+$accordion-title-color: var(--#{$prefix}-accordion-title-color, $color-slate-600) !default;
+$accordion-title-bg: var(--#{$prefix}-accordion-title-bg, $color-slate-50) !default;
+$accordion-title-hover-bg: var(--#{$prefix}-accordion-title-hover-bg, $color-slate-100) !default;
+$accordion-title-border: var(--#{$prefix}-accordion-title-border, $color-slate-200) !default;
 
-$accordion-content-bg: var(--#{$prefix}-accordion-content-bg, white);
+$accordion-content-bg: var(--#{$prefix}-accordion-content-bg, white) !default;
 
 .accordion {
   --#{$prefix}-accordion-chevron-angle: 0deg;
