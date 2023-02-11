@@ -153,3 +153,10 @@ npm run build # Crea una version minificada lista para produccion en la carperta
 // GENERA CLASES UTILITARIAS PARA ESPACIADOS
 @include generate-spacing($prop, $short);
 ```
+
+## `Temas` disponibles
+
+
+| Light `default`  | Coder `dark` |
+| -------------- | -------------- |
+| [![Light Theme](./src/assets/screenshot-light.png)](./src/assets/screenshot-light.png) | [![Coder Theme](./src/assets/screenshot-dark.png)](./src/assets/screenshot-dark.png) |
